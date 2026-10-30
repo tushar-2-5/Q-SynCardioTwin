@@ -1,9 +1,11 @@
+```
 # Q-SynCardioTwin v2
 
 **Synthetic Multimodal Cardiac Dataset: MRI k-space + ECG | 500 Patients | 4 Disease Classes**
 
 [![Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)[![Paper](https://img.shields.io/badge/Paper-Scientific%20Data-green)](https://www.nature.com/sdata/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Paper](https://img.shields.io/badge/Paper-Scientific%20Data-green)](https://www.nature.com/sdata/)
 
 ---
 
@@ -99,24 +101,25 @@ Best validation SSIM: **0.9540** (50 epochs, Adam lr=1e-4)
 
 ## Repository Structure
 
+```
 Q-SynCardioTwin/
 ├── README.md
 ├── requirements.txt
 ├── notebook/
-│ └── qsyncardiotwin_validation.ipynb
+│   └── qsyncardiotwin_validation.ipynb
 └── figures/
-├── fig1_overview.png
-├── fig2_pipeline.png
-├── fig3_representative.png
-├── fig4_kspace.png
-├── fig5_directory_tree.png
-├── fig6_distributions.png
-├── fig7_crossmodal.png
-├── fig8_roc.png
-├── fig9_reconstruction_curves.png
-├── figC1_scaling.png
-└── figC2_transfer.png
-
+    ├── fig1_overview.png
+    ├── fig2_pipeline.png
+    ├── fig3_representative.png
+    ├── fig4_kspace.png
+    ├── fig5_directory_tree.png
+    ├── fig6_distributions.png
+    ├── fig7_crossmodal.png
+    ├── fig8_roc.png
+    ├── fig9_reconstruction_curves.png
+    ├── figC1_scaling.png
+    └── figC2_transfer.png
+```
 
 ---
 
@@ -132,7 +135,7 @@ kspace_R4   = np.load('patients/P0001/kspace_R4.npz')['kspace']     # shape: (8,
 ecg         = np.load('patients/P0001/ecg_12lead.npz')['ecg']       # shape: (12, 5000)
 phenotype   = json.load(open('patients/P0001/phenotype.json'))
 
-print(f"Disease : {phenotype['disease']}")
+print(f"Disease   : {phenotype['disease']}")
 print(f"Heart Rate: {phenotype['heart_rate_bpm']} bpm")
 print(f"MRI k-space: {kspace_full.shape}")
 print(f"ECG shape : {ecg.shape}")
@@ -142,6 +145,7 @@ print(f"ECG shape : {ecg.shape}")
 
 ## Requirements
 
+```
 torch>=1.12.0
 torchvision>=0.13.0
 numpy>=1.21.0
@@ -149,7 +153,7 @@ pytorch-msssim>=0.2.1
 scikit-learn>=1.0.0
 matplotlib>=3.5.0
 scipy>=1.7.0
-
+```
 
 ---
 
@@ -159,6 +163,8 @@ scipy>=1.7.0
 |----------|------|
 | Google Drive | [Download (2.2 GB)](https://drive.google.com/file/d/1HXdBXSXomkRFzJGIJITj2mGjzWLSFHLk/view?usp=sharing) |
 | Kaggle | [tushar72345/qsyncardiotwin-v2](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2) |
+
+---
 
 ## Citation
 
@@ -175,7 +181,6 @@ scipy>=1.7.0
 
 ## License
 
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) — Free to use with attribution.
+```
 
-[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-
-(https://creativecommons.org/licenses/by/4.0/) — Free to use with attribution.
