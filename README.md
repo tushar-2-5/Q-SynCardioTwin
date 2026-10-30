@@ -156,11 +156,10 @@ scipy>=1.7.0
 
 ## Dataset Access
 
-Full dataset (500 patients): **[Kaggle](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2)**
-
-Permanent DOI: `10.5281/zenodo.XXXXXXX` *(Zenodo upload in progress)*
-
----
+| Platform | Link |
+|----------|------|
+| Google Drive | [Download (2.2 GB)](https://drive.google.com/file/d/1HXdBXSXomkRFzJGIJITj2mGjzWLSFHLk/view?usp=sharing) |
+| Kaggle | [tushar72345/qsyncardiotwin-v2](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2) |
 
 ## Citation
 
