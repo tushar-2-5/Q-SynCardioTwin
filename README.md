@@ -3,8 +3,7 @@
 **Synthetic Multimodal Cardiac Dataset: MRI k-space + ECG | 500 Patients | 4 Disease Classes**
 
 [![Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Paper](https://img.shields.io/badge/Paper-Scientific%20Data-green)](https://www.nature.com/sdata/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)[![Paper](https://img.shields.io/badge/Paper-Scientific%20Data-green)](https://www.nature.com/sdata/)
 
 ---
 
