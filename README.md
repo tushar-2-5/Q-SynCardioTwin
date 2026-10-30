@@ -1,4 +1,3 @@
-
 # Q-SynCardioTwin v2
 
 **Synthetic Multimodal Cardiac Dataset: MRI k-space + ECG | 500 Patients | 4 Disease Classes**
@@ -101,31 +100,30 @@ Best validation SSIM: **0.9540** (50 epochs, Adam lr=1e-4)
 
 ## Repository Structure
 
-
 Q-SynCardioTwin/
 ├── README.md
 ├── requirements.txt
 ├── notebook/
-│   └── qsyncardiotwin_validation.ipynb
+│ └── qsyncardiotwin_validation.ipynb
 └── figures/
-    ├── fig1_overview.png
-    ├── fig2_pipeline.png
-    ├── fig3_representative.png
-    ├── fig4_kspace.png
-    ├── fig5_directory_tree.png
-    ├── fig6_distributions.png
-    ├── fig7_crossmodal.png
-    ├── fig8_roc.png
-    ├── fig9_reconstruction_curves.png
-    ├── figC1_scaling.png
-    └── figC2_transfer.png
+├── fig1_overview.png
+├── fig2_pipeline.png
+├── fig3_representative.png
+├── fig4_kspace.png
+├── fig5_directory_tree.png
+├── fig6_distributions.png
+├── fig7_crossmodal.png
+├── fig8_roc.png
+├── fig9_reconstruction_curves.png
+├── figC1_scaling.png
+└── figC2_transfer.png
 
 
-
+---
 
 ## Quick Start
 
-python
+```python
 import numpy as np
 import json
 
@@ -139,12 +137,11 @@ print(f"Disease   : {phenotype['disease']}")
 print(f"Heart Rate: {phenotype['heart_rate_bpm']} bpm")
 print(f"MRI k-space: {kspace_full.shape}")
 print(f"ECG shape : {ecg.shape}")
+```
 
-
-
+---
 
 ## Requirements
-
 
 torch>=1.12.0
 torchvision>=0.13.0
@@ -155,7 +152,7 @@ matplotlib>=3.5.0
 scipy>=1.7.0
 
 
-
+---
 
 ## Dataset Access
 
@@ -164,23 +161,21 @@ scipy>=1.7.0
 | Google Drive | [Download (2.2 GB)](https://drive.google.com/file/d/1HXdBXSXomkRFzJGIJITj2mGjzWLSFHLk/view?usp=sharing) |
 | Kaggle | [tushar72345/qsyncardiotwin-v2](https://www.kaggle.com/datasets/tushar72345/qsyncardiotwin-v2) |
 
-
+---
 
 ## Citation
 
-bibtex
+```bibtex
 @article{qsyncardiotwin2026,
   title   = {Q-SynCardioTwin: A Synthetic Multimodal Cardiac Dataset for MRI Reconstruction and ECG Analysis},
   author  = {Tushar},
   journal = {Scientific Data},
   year    = {2026}
 }
+```
 
-
-
+---
 
 ## License
 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) — Free to use with attribution.
-
-
